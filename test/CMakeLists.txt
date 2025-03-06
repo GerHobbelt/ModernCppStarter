@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.14...3.22)
+cmake_minimum_required(VERSION 3.24...3.31)
 
 project(GreeterTests LANGUAGES CXX)
 
@@ -15,13 +15,17 @@ include(../cmake/tools.cmake)
 
 include(../cmake/CPM.cmake)
 
-CPMAddPackage("gh:doctest/doctest@2.4.9")
-CPMAddPackage("gh:TheLartians/Format.cmake@1.7.3")
+CPMAddPackage("gh:doctest/doctest@2.4.11")
+CPMAddPackage("gh:TheLartians/Format.cmake@1.8.3")
 
 if(TEST_INSTALLED_VERSION)
   find_package(Greeter REQUIRED)
 else()
-  CPMAddPackage(NAME Greeter SOURCE_DIR ${CMAKE_CURRENT_LIST_DIR}/..)
+  CPMAddPackage(
+    NAME Greeter
+    SOURCE_DIR ${CMAKE_CURRENT_LIST_DIR}/..
+    FORCE ON
+  )
 endif()
 
 # ---- Create binary ----
@@ -49,8 +53,13 @@ enable_testing()
 # testing frameworks add the tests target instead: add_test(NAME ${PROJECT_NAME} COMMAND
 # ${PROJECT_NAME})
 
-include(${doctest_SOURCE_DIR}/scripts/cmake/doctest.cmake)
-doctest_discover_tests(${PROJECT_NAME})
+# prevent problems if CPM_USE_LOCAL_PACKAGES is set:
+if(EXISTS ${doctest_SOURCE_DIR}/scripts/cmake/doctest.cmake)
+  include(${doctest_SOURCE_DIR}/scripts/cmake/doctest.cmake)
+  doctest_discover_tests(${PROJECT_NAME})
+else()
+  add_test(NAME ${PROJECT_NAME} COMMAND ${PROJECT_NAME})
+endif
 
 # ---- code coverage ----
 
