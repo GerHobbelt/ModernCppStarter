@@ -59,7 +59,7 @@ if(EXISTS ${doctest_SOURCE_DIR}/scripts/cmake/doctest.cmake)
   doctest_discover_tests(${PROJECT_NAME})
 else()
   add_test(NAME ${PROJECT_NAME} COMMAND ${PROJECT_NAME})
-endif
+endif()
 
 # ---- code coverage ----
 
