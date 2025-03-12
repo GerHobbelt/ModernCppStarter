@@ -1,9 +1,7 @@
 name: Documentation
 
 on:
-  push:
-    tags:
-      - "*"
+  push
 
 env:
   CPM_SOURCE_CACHE: ${{ github.workspace }}/cpm_modules
@@ -38,8 +36,8 @@ jobs:
           cmake -Sdocumentation -Bbuild
           cmake --build build --target GenerateDocs
 
-      - name: Publish
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build/doxygen/html
+      # - name: Publish
+      #   uses: peaceiris/actions-gh-pages@v4
+      #   with:
+      #     github_token: ${{ secrets.GITHUB_TOKEN }}
+      #     publish_dir: ./build/doxygen/html
