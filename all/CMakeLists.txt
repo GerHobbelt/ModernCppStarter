@@ -5,8 +5,7 @@ cmake_minimum_required(VERSION 3.24...3.31)
 
 project(BuildAll LANGUAGES CXX)
 
-set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
-
+include(../cmake/options.cmake)
 include(../cmake/tools.cmake)
 
 # needed to generate test target
