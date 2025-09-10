@@ -1,9 +1,9 @@
-[![Actions Status](https://github.com/TheLartians/ModernCppStarter/workflows/MacOS/badge.svg)](https://github.com/TheLartians/ModernCppStarter/actions)
-[![Actions Status](https://github.com/TheLartians/ModernCppStarter/workflows/Windows/badge.svg)](https://github.com/TheLartians/ModernCppStarter/actions)
-[![Actions Status](https://github.com/TheLartians/ModernCppStarter/workflows/Ubuntu/badge.svg)](https://github.com/TheLartians/ModernCppStarter/actions)
-[![Actions Status](https://github.com/TheLartians/ModernCppStarter/workflows/Style/badge.svg)](https://github.com/TheLartians/ModernCppStarter/actions)
-[![Actions Status](https://github.com/TheLartians/ModernCppStarter/workflows/Install/badge.svg)](https://github.com/TheLartians/ModernCppStarter/actions)
-[![codecov](https://codecov.io/gh/TheLartians/ModernCppStarter/branch/master/graph/badge.svg)](https://codecov.io/gh/TheLartians/ModernCppStarter)
+[![Actions Status](https://github.com/GerHobbelt/ModernCppStarter/workflows/MacOS/badge.svg)](https://github.com/GerHobbelt/ModernCppStarter/actions)
+[![Actions Status](https://github.com/GerHobbelt/ModernCppStarter/workflows/Windows/badge.svg)](https://github.com/GerHobbelt/ModernCppStarter/actions)
+[![Actions Status](https://github.com/GerHobbelt/ModernCppStarter/workflows/Ubuntu/badge.svg)](https://github.com/GerHobbelt/ModernCppStarter/actions)
+[![Actions Status](https://github.com/GerHobbelt/ModernCppStarter/workflows/Style/badge.svg)](https://github.com/GerHobbelt/ModernCppStarter/actions)
+[![Actions Status](https://github.com/GerHobbelt/ModernCppStarter/workflows/Install/badge.svg)](https://github.com/GerHobbelt/ModernCppStarter/actions)
+[![codecov](https://codecov.io/gh/GerHobbelt/ModernCppStarter/branch/master/graph/badge.svg)](https://codecov.io/gh/GerHobbelt/ModernCppStarter)
 
 <p align="center">
   <img src="https://repository-images.githubusercontent.com/254842585/4dfa7580-7ffb-11ea-99d0-46b8fe2f4170" height="175" width="auto" />
@@ -25,7 +25,7 @@ This template is the result of learnings from many previous projects and should 
 - Code formatting enforced by [clang-format](https://clang.llvm.org/docs/ClangFormat.html) and [cmake-format](https://github.com/cheshirekow/cmake_format) via [Format.cmake](https://github.com/TheLartians/Format.cmake)
 - Reproducible dependency management via [CPM.cmake](https://github.com/TheLartians/CPM.cmake)
 - Installable target with automatic versioning information and header generation via [PackageProject.cmake](https://github.com/TheLartians/PackageProject.cmake)
-- Automatic [documentation](https://thelartians.github.io/ModernCppStarter) and deployment with [Doxygen](https://www.doxygen.nl) and [GitHub Pages](https://pages.github.com)
+- Automatic [documentation](https://GerHobbelt.github.io/ModernCppStarter) and deployment with [Doxygen](https://www.doxygen.nl) and [GitHub Pages](https://pages.github.com)
 - Support for [sanitizer tools, and more](#additional-tools)
 
 ## Usage
@@ -96,7 +96,7 @@ pip install cmake clang-format cmake_format==0.6.11 pyyaml
 
 ### Build the documentation
 
-The documentation is automatically built and [published](https://thelartians.github.io/ModernCppStarter) whenever a [GitHub Release](https://help.github.com/en/github/administering-a-repository/managing-releases-in-a-repository) is created.
+The documentation is automatically built and [published](https://GerHobbelt.github.io/ModernCppStarter) whenever a [GitHub Release](https://help.github.com/en/github/administering-a-repository/managing-releases-in-a-repository) is created.
 To manually build documentation, call the following command.
 
 ```bash
@@ -205,4 +205,4 @@ Perhaps the [MiniCppStarter](https://github.com/TheLartians/MiniCppStarter) is s
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=TheLartians/ModernCppStarter,cpp-best-practices/gui_starter_template,filipdutescu/modern-cpp-template&type=Date)](https://star-history.com/#TheLartians/ModernCppStarter&cpp-best-practices/gui_starter_template&filipdutescu/modern-cpp-template&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=GerHobbelt/ModernCppStarter,cpp-best-practices/gui_starter_template,filipdutescu/modern-cpp-template&type=Date)](https://star-history.com/#GerHobbelt/ModernCppStarter&cpp-best-practices/gui_starter_template&filipdutescu/modern-cpp-template&Date)
