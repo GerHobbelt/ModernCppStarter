@@ -6,6 +6,8 @@ if(NOT PROJECT_SOURCE_DIR STREQUAL CMAKE_SOURCE_DIR)
   return()
 endif()
 
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+
 include(${CMAKE_CURRENT_LIST_DIR}/CPM.cmake)
 
 # enables sanitizers support using the the `USE_SANITIZER` flag available values are: Address,

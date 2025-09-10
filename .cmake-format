@@ -51,7 +51,13 @@ parse:
         NAMESPACE: 1
         INCLUDE_DIR: 1
         INCLUDE_DESTINATION: 1
+        INCLUDE_HEADER_PATTERN: 1
         BINARY_DIR: 1
         COMPATIBILITY: 1
         VERSION_HEADER: 1
+        EXPORT_HEADER: 1
+        DISABLE_VERSION_SUFFIX: 1
+        CPACK: 1
+        RUNTIME_DESTINATION: 1
         DEPENDENCIES: +
+        HEADER_SETS: +
