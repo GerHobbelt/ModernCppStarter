@@ -5,7 +5,7 @@ cmake_minimum_required(VERSION 3.24...3.31)
 # Note: update this to your new project's name and version
 project(
   Greeter
-  VERSION 1.0
+  VERSION 1.0.0.1
   LANGUAGES CXX
 )
 
