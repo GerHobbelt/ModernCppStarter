@@ -1,5 +1,5 @@
 build/
 /build*
-/.vscode
 /cpm_modules
+/vscode/.cache
 .DS_Store
